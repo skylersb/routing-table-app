@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="starWars">
+<head>
+	<title>Routing Example</title>
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+	<div class="tableTitle" ng-controller="mainController">
+		<a href="/">
+			<h2>Star Wars Characters</h2>
+		</a>
+		<ng-view></ng-view>
+	</div>
+
+<!-- VENDORS -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js"></script>
+<!-- SCRIPTS -->
+<script src="/js/app.js"></script>
+<script src="/js/controllers/mainController.js"></script>
+<script src="/js/controllers/editController.js"></script>
+<script src="/js/services/starService.js"></script>
+
+
+</body>
+</html>

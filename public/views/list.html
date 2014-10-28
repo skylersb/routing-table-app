@@ -1,0 +1,18 @@
+<table class="table table-striped">
+	<thread>
+		<tr>
+			<td>Name</td>
+			<td>Description</td>
+			<td><a href="/#/new-character"><i class="fa fa-plus-square"></i></a></td>
+		</tr>
+	</thread>
+	<tbody>
+		<tr ng-repeat="character in characters">
+			
+			<td>{{character.name}}</td>
+			<td>{{character.description}}</td>
+			<td><a href="/#/edit/{{$index}}"><i class="fa fa-pencil-square-o"></i></a></td>
+			
+		</tr>
+	</tbody>
+</table>
